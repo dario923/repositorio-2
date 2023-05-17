@@ -4,6 +4,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background:#fdcb6e;
     color: #2d3436;
+    margin:0;
 }
 a{
     color: #2d3436;
@@ -15,8 +16,9 @@ a.actual{
 header{
     background: #ecf0f1;
 }
-header > h1{
+header > h1 {
     font-size: 1.2em;
+    margin-top: 0;
 }
 header > h1 > a > span{
     color:#55efc4;
@@ -27,16 +29,52 @@ header > h1 > a{
 p.slogan{
     color:#636e72;
     text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+main > h2 {
+font-size: 3em;
+}
+main > h2 > span {
+    color: #55efc4;
 }
 #servicios{
     background: #2d3436;
+    color: #ecf0f1;
 }
 #testimonios{
     background: #00b894;
+    color:#636e72;
+}
+#testimonios ul {
+    margin-top: 0;
 }
 #testimonios li{
     background: #55efc4;
 }
-footer{
+footer {
     background: #00b894;
+    color: #ecf0f1;
+}
+footer a {
+    color: #ecf0f1;
+}
+footer ul {
+    margin-bottom: 0;
+}
+/***********/
+.boton-principal {
+    background: #00b894;
+    color: #ecf0f1;
+    border:  3px solid #00b894;
+    border-radius: 5em;
+    font-weight: bold;
+    font-size: 1.4em;
+    padding: .5em 1.1em;
+    display: inline-block;
+    
+}
+.boton-principal:hover {
+    color:#00b894;
+    background:  #ecf0f1;
 }
