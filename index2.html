@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Hospital camino al cielo</title>
+    <link href="css\style.css" rel="stylesheet">
 </head>
 <body>
    <header>
-    <h1><a href="#">Hospital del Centro</a></h1>
+    <h1><a href="#">Hospital <span> del Centro</span></a></h1>
     <ul>
-        <li><a href="#">Inicio</a></li>
+        <li><a href="#" class="actual">Inicio</a></li>
         <li><a href="#">Instalaciones</a></li>
         <li><a href="#">Servicio</a></li>
         <li><a href="#">Equipo</a></li>
@@ -22,13 +24,13 @@
 
    </header>
    <main>
-    <p>Cuidamos de vos y tu familia</p>
+    <p class="slogan">Cuidamos de vos y tu familia</p>
     <h2>Hospital del Centro</h2>
     <p><a href="#">Solicitar turno </a></p>
     <img src="imagen\electro.jpg" width="480">
 
    </main>
-   <aside>
+   <aside id="servicios">
     <ul>
         <li>Alergias</li>
         <li>Analisis clinicos</li>
@@ -40,7 +42,7 @@
     <img src="imagen\camilla.jpg" width="480">
 
    </aside>
-   <aside>
+   <aside id="testimonios">
     <ul>
         <li>
             <img src="imagen\mujer1.jpg" width="480">

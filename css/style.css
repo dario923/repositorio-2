@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@400;700 & family= Roboto:wght@100 & display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#fdcb6e;
+    color: #2d3436;
+}
+a{
+    color: #2d3436;
+    text-decoration: none;
+}
+a.actual{
+    font-weight: bold;
+}
+header{
+    background: #ecf0f1;
+}
+header > h1{
+    font-size: 1.2em;
+}
+header > h1 > a > span{
+    color:#55efc4;
+}
+header > h1 > a{
+    word-spacing: -0.3em;
+}
+p.slogan{
+    color:#636e72;
+    text-transform: uppercase;
+}
+#servicios{
+    background: #2d3436;
+}
+#testimonios{
+    background: #00b894;
+}
+#testimonios li{
+    background: #55efc4;
+}
+footer{
+    background: #00b894;
+}
