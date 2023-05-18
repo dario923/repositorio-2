@@ -16,14 +16,14 @@ a.actual{
 header{
     background: #ecf0f1;
 }
-header > h1 {
+header h1 {
     font-size: 1.2em;
     margin-top: 0;
 }
-header > h1 > a > span{
+header h1 > a > span{
     color:#55efc4;
 }
-header > h1 > a{
+header h1 > a{
     word-spacing: -0.3em;
 }
 p.slogan{
@@ -32,10 +32,10 @@ p.slogan{
     letter-spacing: 0.3em;
     font-weight: bold;
 }
-main > h2 {
+main h2 {
 font-size: 3em;
 }
-main > h2 > span {
+main h2 > span {
     color: #55efc4;
 }
 #servicios{
@@ -77,4 +77,192 @@ footer ul {
 .boton-principal:hover {
     color:#00b894;
     background:  #ecf0f1;
+}
+.boton-invertido {
+    color: #00b894;
+    background: #ecf0f1;
+    border:  3px solid #00b894;
+    border-radius: 5em;
+    font-weight: bold;
+    padding: .2em 0.8em;
+    
+    
+}
+.boton-invertido:hover {
+    background:#00b894;
+    color:  #ecf0f1;
+}
+
+header ul, #servicios ul, #testimonios ul, footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+header ul, #testimonios ul, footer ul {
+    display: flex;
+    place-content: space-between;
+}
+header div.contenedor {
+    display: flex;
+    place-content: space-between;
+}
+header, main, aside, footer {
+    padding: 1em;
+}
+#testimonios li img {
+    width: 5em;
+    height: 5em;
+}
+#servicios ul {
+    margin-left: 2em;
+    position: relative;
+}
+#servicios ul li:before{
+    content: '';
+    position: absolute;
+    left: -2em;
+    width: 15px;
+    height: 15px;
+    background-image: url("../imagen/corazon.png");
+    background-size: contain;
+}
+/***********/
+div.contenedor {
+    width: 1080;
+    margin: 0 auto;
+}
+header a {
+    padding: 1em;
+}
+main div.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+}
+main img{
+    width: 30%;
+}
+main {
+    padding-top: 8em;
+    padding-bottom: 8em;
+}
+/***********/
+#servicios{
+    position: relative;
+    font-size: 1.4em;
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+#servicios ul{
+    margin-left: 9em;
+}
+#servicios li{
+    margin-bottom: 1em;
+}
+#servicios ul li:before{
+    width: 30px;
+    height: 30px;
+}
+#servicios img{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -1em;
+    width: 350px;
+}
+#servicios:before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 15em;
+    background: #00b894;
+    left: 0;
+    top: -4em;
+}
+#servicios:after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url(../imagen/snake.png) no-repeat;
+    background-size: contain;
+    left: -1.5em;
+    top: -4em;
+}
+#testimonios {
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+#testimonios ul li{
+    margin: 1em;
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    border-radius: 1em;
+    
+}
+#testimonios ul li img{
+
+    border: 5px solid #55efc4;
+    border-radius: 50%;
+    margin-top: -4.5em;
+    width: 100px;
+    height: 100px;
+}
+
+#contacto{
+    position: relative;
+    padding-top: 14em;
+    padding-bottom: 14em;
+}
+#contacto h2{
+    font-size: 2em;
+}
+#contacto label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+#contacto input, #contacto textarea{
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border-radius: 0.3em;
+    box-sizing: border-box;
+}
+#contacto button{
+    cursor: pointer;
+}
+#contacto div.contenedor div {
+    width: 45%;
+}
+#contacto iframe{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+}
+footer ul {
+    place-content: space-evenly;
+}
+/***********/
+div.contenedor {
+    width: 100%;
+    max-width: 1080;
+    margin: 0 auto;
+}
+@media only screen and (max-width:1500px){
+    #servicios:after {
+        background: none;
+    }
+}
+@media only screen and (max-width:1200px){
+    #servicios:before {
+        background: none;
+    }
+    
+    #servicios div.contenedor ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    }
 }
