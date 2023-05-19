@@ -358,10 +358,10 @@ header div.contenedor nav{
         display: flex;
         place-content: space-between;
     }
-    #menu-check:not(:checked) ~ nav{
+    header div.contenedor nav{
         display: none;
     }
-    #menu-check:checked ~ nav{
+    header div.contenedor nav.visible{
         display: block;
     }
     #menu{
@@ -385,11 +385,14 @@ header div.contenedor nav{
     #menu-cerrar{
         display: none;
     }
-    #menu-check:checked ~ label #menu-abrir{
+    #menu.salir #menu-abrir{
         display: none;
     }
-    #menu-check:checked ~ label #menu-cerrar{
+    #menu.salir #menu-cerrar{
         display: block;
+    }
+    body.no-scroll {
+        overflow: hidden;
     }
     header div.contenedor nav {
         position: absolute;
@@ -402,6 +405,7 @@ header div.contenedor nav{
         opacity: 0.8;
         color:#ecf0f1;
         font-size: 1.4em;
+        z-index: 9998;
 
     }
     header div.contenedor nav ul a {
