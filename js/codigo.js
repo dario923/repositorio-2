@@ -13,3 +13,11 @@ window.addEventListener("DOMContentLoaded", (event)=>{
 
     });
 });
+
+let nombre=document.getElementById('slogan');
+/*console.log(titulo);
+function retornaNombre(nombre){
+    return 'Hola'+nombre;
+}*/
+let retornaNombre= nombre => 'Hola'+nombre;
+nombre.innerHTML.=retornaNombre('dario');
